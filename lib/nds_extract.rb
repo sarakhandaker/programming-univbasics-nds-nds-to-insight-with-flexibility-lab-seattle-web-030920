@@ -1,8 +1,6 @@
-# Provided, don't edit
 require 'directors_database'
 
-# A method we're giving you. This "flattens"  Arrays of Arrays so: [[1,2],
-# [3,4,5], [6]] => [1,2,3,4,5,6].
+# A method we're giving you. This "flattens"  Arrays of Arrays so: [[1,2], [3,4,5], [6]] => [1,2,3,4,5,6].
 
 def flatten_a_o_a(aoa)
   result = []
@@ -77,10 +75,6 @@ def movies_with_directors_set(source)
   # Array of Arrays containing all of a director's movies. Each movie will need
   # to have a :director_name key added to it.
 end
-
-# ----------------    End of Your Code Region --------------------
-# Don't edit the following code! Make the methods above work with this method
-# call code. You'll have to "see-saw" to get this to work!
 
 def studios_totals(nds)
   a_o_a_movies_with_director_names = movies_with_directors_set(nds)
