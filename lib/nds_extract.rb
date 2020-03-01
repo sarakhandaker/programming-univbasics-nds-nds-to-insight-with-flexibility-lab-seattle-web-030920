@@ -5,7 +5,6 @@ require 'directors_database'
 def flatten_a_o_a(aoa)
   result = []
   i = 0
-
   while i < aoa.length do
     k = 0
     while k < aoa[i].length do
@@ -14,7 +13,6 @@ def flatten_a_o_a(aoa)
     end
     i += 1
   end
-
   result
 end
 
@@ -27,7 +25,6 @@ def movie_with_director_name(director_name, movie_data)
     :director_name => director_name
   }
 end
-
 
 # Your code after this point
 
@@ -46,6 +43,12 @@ def movies_with_director_key(name, movies_collection)
   # Array of Hashes where each Hash represents a movie; however, they should all have a
   # :director_name key. This addition can be done by using the provided
   # movie_with_director_name method
+  new_array=[]
+  i=0
+  while i<movies_collection.length
+  new_array[i]=movie_with_director_name(name, movies_collection[i])
+  i+=1
+  end
 end
 
 
