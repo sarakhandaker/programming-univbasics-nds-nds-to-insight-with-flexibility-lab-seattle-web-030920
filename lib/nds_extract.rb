@@ -65,7 +65,7 @@ def movies_with_directors_set(source)
   i=0
   while i<source.length
     name=source[i][:name]
-    newarr<< movies_with_director_key(name,source[i])
+    newarr<< movies_with_director_key(name,source[i][:movies])
     end
   i+=1
   end
